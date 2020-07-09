@@ -1,0 +1,6 @@
+G_code += "G90 "+ "A"  + myArray[i][17] +" F" + FA_Roll + "\n";
+G_code += "G91 "+ "X"  + ((sqrt(pow((curr.x-prev.x),2)+pow((curr.y-prev.y),2)))-temp_offset)+" F"+F_X+"\n";
+G_code += "A0"  +" F"  + FA_Roll+"\n";
+G_code += "G90 "+ "A"  + Roll_set(myArray[i][17]) +" F" + FA_Roll + "\n";
+G_code += "G91 X1.8 F200"+"\n";
+        
